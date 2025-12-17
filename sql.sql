@@ -10,7 +10,7 @@ CREATE TABLE `subject` (
   `subject_id`   INT(11)      NOT NULL AUTO_INCREMENT COMMENT '学科ID',
   `subject_name` VARCHAR(50)  NOT NULL COMMENT '学科名称（如：语文、数学、英语、物理）',
   `subject_code` VARCHAR(20)  NOT NULL COMMENT '学科编码（如：CHINESE、MATH、ENGLISH、PHYSICS）',
-  `grade_level`  TINYINT(2)   NOT NULL COMMENT '适用年级段：1小学 2初中 3高中 9通用',
+  `grade_level`  TINYINT(2)   NOT NULL COMMENT '适用年级段：1小学 2初中 3高中 4大学 9通用',
   `sort_order`   INT(11)      NOT NULL DEFAULT 0 COMMENT '排序值，越小越靠前',
   `status`       TINYINT(1)   NOT NULL DEFAULT 1 COMMENT '状态：1启用 0禁用',
   `create_time`  DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',

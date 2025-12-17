@@ -2,6 +2,7 @@ package cn.edu.zjut.backend.dao;
 
 import cn.edu.zjut.backend.dto.QuestionQueryDTO;
 import cn.edu.zjut.backend.po.Questions;
+import lombok.Setter;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Session;
@@ -11,12 +12,9 @@ import java.util.List;
 
 public class QuestionDAO {
 
+    @Setter
     private Session session;
     private final Log log = LogFactory.getLog(QuestionDAO.class);
-
-    public void setSession(Session session) {
-        this.session=session;
-    }
 
     public void add(Questions question) {
         log.debug("saving question instance");
@@ -74,7 +72,7 @@ public class QuestionDAO {
 
             return query.list();
         } catch (RuntimeException re) {
-            log.error("save failed", re);
+            log.error("query failed", re);
             throw re;
         } finally{
         }
@@ -89,7 +87,18 @@ public class QuestionDAO {
                 query.executeUpdate();
             }
         } catch (RuntimeException re) {
-            log.error("save failed", re);
+            log.error("delete failed", re);
+            throw re;
+        } finally{
+        }
+    }
+
+    public void update(Questions question) {
+        try {
+            session.update(question);
+            log.debug("update successful");
+        } catch (RuntimeException re) {
+            log.error("update failed", re);
             throw re;
         } finally{
         }
