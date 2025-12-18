@@ -111,6 +111,49 @@ public class UserController {
     }
 
     /**
+     * 管理员注册教师用户
+     */
+    @RequestMapping(value = "/admin/teacher/register", method = RequestMethod.POST)
+    @ResponseBody
+    public Response<String> adminRegisterTeacher(@RequestBody User user, HttpSession session) {
+        User currentUser = (User) session.getAttribute("currentUser");
+        if (currentUser == null) {
+            return Response.error("请先登录");
+        }
+        
+        // 只有管理员可以注册教师用户
+        if (currentUser.getUserType() != 0) {
+            return Response.error("权限不足，只有管理员可以注册教师用户");
+        }
+        
+        // 强制设置用户类型为教师
+        user.setUserType(1); // 教师账号
+        
+        // 检查手机号格式
+        if (user.getPhone() != null && !user.getPhone().isEmpty()) {
+            String phonePattern = "^1[3-9]\\d{9}$";
+            if (!user.getPhone().matches(phonePattern)) {
+                return Response.error("手机号格式不正确");
+            }
+        }
+        
+        // 检查密码是否为空
+        if (user.getPassword() == null || user.getPassword().isEmpty()) {
+            return Response.error("密码不能为空！");
+        }
+        
+        if (userService.adminRegister(user)) {
+            return Response.success("教师用户注册成功");
+        } else {
+            // 区分不同错误原因
+            if (user.getPassword() == null || user.getPassword().isEmpty()) {
+                return Response.error("密码不能为空！");
+            }
+            return Response.error("注册失败，用户名可能已存在或手机号格式不正确");
+        }
+    }
+
+    /**
      * 管理员更新其他用户信息
      */
     @RequestMapping(value = "/admin/user", method = RequestMethod.PUT)
