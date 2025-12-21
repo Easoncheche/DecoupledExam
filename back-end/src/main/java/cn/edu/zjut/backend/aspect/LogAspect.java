@@ -1,5 +1,5 @@
 // LogAspect.java
-package cn.edu.zjut.backend.aop;
+package cn.edu.zjut.backend.aspect;
 
 import cn.edu.zjut.backend.annotation.LogRecord;
 import cn.edu.zjut.backend.po.SystemOperationLog;
