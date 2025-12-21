@@ -1,7 +1,6 @@
-/*package cn.edu.zjut.backend.aspect;
+package cn.edu.zjut.backend.aspect;
 
 import cn.edu.zjut.backend.util.Jwt;
-import cn.edu.zjut.backend.util.UserContext;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -20,12 +19,13 @@ import java.util.List;
 @Component
 public class AuthHandler {
 
-
+    /**
+     * 白名单列表
+     * 存放不需要身份验证的 URI 路径
+     */
     private static final List<String> WHITE_LIST = List.of(
-            "/api/admin/teacher/register",
             "/api/user/register",
-            "/api/user/login",
-            "/api/admin/user/password/reset"
+            "/api/user/login"
     );
 
     @Pointcut("execution(* cn.edu.zjut.backend.controller..*(..))")
@@ -67,12 +67,11 @@ public class AuthHandler {
                 throw new Exception("Token invalid");
             }
 
-            UserContext.setClaims(claims);
+            request.setAttribute("claims", claims);
 
             // ✅ 放行，执行 Controller
             return joinPoint.proceed();
         } catch (Exception e) {
-            e.printStackTrace();
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             response.getWriter().write("{\"code\":401,\"message\":\"Invalid token\"}");
             return null;
@@ -84,4 +83,3 @@ public class AuthHandler {
         return WHITE_LIST.stream().anyMatch(uri::equals);
     }
 }
-*/

@@ -17,7 +17,6 @@
         <!-- 自动创建/更新表结构 -->
         <property name="hibernate.hbm2ddl.auto">update</property>
 
-
         <!-- 3. 关键补充：Session上下文配置（解决Session空指针核心） -->
         <property name="hibernate.current_session_context_class">thread</property>
 
@@ -34,6 +33,10 @@
         <mapping class="cn.edu.zjut.backend.po.QuestionTags"/>
         <mapping class="cn.edu.zjut.backend.po.ExamPaper"/>
         <mapping class="cn.edu.zjut.backend.po.ExamPaperQuestion"/>
+        <mapping class="cn.edu.zjut.backend.po.TeacherPosition"/>
+        <mapping class="cn.edu.zjut.backend.po.TeacherSubject"/>
+        <mapping class="cn.edu.zjut.backend.po.Course"/>
+        <mapping class="cn.edu.zjut.backend.po.StudentCourse"/>
         <mapping class="cn.edu.zjut.backend.po.SystemOperationLog"/>
         <mapping class="cn.edu.zjut.backend.po.SecurityEventLog"/>
         <mapping class="cn.edu.zjut.backend.po.UserLoginLog"/>
