@@ -17,6 +17,9 @@ import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import java.util.List;
+import org.springframework.web.multipart.MultipartFile;
+import java.io.File;
+
 
 @Controller
 @RequestMapping("/api")
@@ -83,23 +86,37 @@ public class UserController {
                     user.setUserId(userId);
                     user.setUsername(username);
                     user.setUserType(userType);
+
+//                    session.setAttribute("currentUser", user);
                     
                     // 记录登录成功日志
-                    loginLogger.logLoginSuccess(
-                        userId,
-                        username
-                    );
+
                 } catch (Exception e) {
                     // 如果解析失败，仍然记录日志但使用基本信息
-                    loginLogger.logLoginSuccess(
-                        null,
-                        loginRequest.getUsername()
-                    );
+//                    loginLogger.logLoginSuccess(
+//                        null,
+//                        loginRequest.getUsername(),
+//                        request.getRemoteAddr(),
+//                        request.getHeader("User-Agent"),
+//                        session.getId()
+//                    );
+                    
+                    // 记录登录成功日志
+//                    loginLogger.logLoginSuccess(
+//                        userId,
+//                        username
+//                    );
                 }
             }
             return Response.success(token);
         } else {
             // 登录失败，记录登录日志
+//            loginLogger.logLoginFailure(
+//                loginRequest.getUsername(),
+//                request.getRemoteAddr(),
+//                request.getHeader("User-Agent"),
+//                "用户名或密码错误，或账户已被禁用"
+//            );
             loginLogger.logLoginFailure("用户名或密码错误，或账户已被禁用");
             return Response.error("用户名或密码错误，或账户已被禁用");
         }
@@ -232,6 +249,69 @@ public class UserController {
             return Response.error("用户信息更新失败，用户名可能已存在");
         }
     }
+
+    /**
+    * 上传用户人脸图像
+    */
+    @RequestMapping(value = "/user/face-image/upload", method = RequestMethod.POST)
+    @ResponseBody
+    public Response<String> uploadUserFaceImage(@RequestParam("file") MultipartFile file, HttpServletRequest httpRequest) {
+        Claims claims = (Claims) httpRequest.getAttribute("claims");
+        if (claims == null) {
+            return Response.error("请先登录");
+        }
+
+        Long currentUserId = ((Number) claims.get("id")).longValue();
+
+        // 检查是否有文件上传
+        if (file.isEmpty()) {
+            return Response.error("请选择要上传的文件");
+        }
+
+        try {
+        // 确保目录存在
+            String uploadDir = "D:/JAVAfile/JavaEEprogram/DecoupledExam/uploads/face_images";
+            File dir = new File(uploadDir);
+            if (!dir.exists()) {
+                dir.mkdirs();
+            }
+
+            // 生成唯一文件名
+            String originalFilename = file.getOriginalFilename();
+            String fileExtension = "";
+            if (originalFilename != null && originalFilename.contains(".")) {
+                fileExtension = originalFilename.substring(originalFilename.lastIndexOf("."));
+            }
+            String newFileName = "face_" + currentUserId + "_" + System.currentTimeMillis() + fileExtension;
+
+            // 保存文件到指定目录
+            String filePath = uploadDir + "/" + newFileName;
+            file.transferTo(new File(filePath));
+
+            // 生成访问URL
+            String fileUrl = "/uploads/face_images/" + newFileName;
+
+            // 更新用户的人脸图像URL
+            User userToUpdate = new User();
+            userToUpdate.setUserId(currentUserId);
+            userToUpdate.setFaceImg(fileUrl);
+
+            if (userService.updateUser(userToUpdate)) {
+                return Response.success(fileUrl);
+            } else {
+                // 如果更新数据库失败，删除已上传的文件
+                File uploadedFile = new File(filePath);
+                if (uploadedFile.exists()) {
+                    uploadedFile.delete();
+                }
+                return Response.error("人脸图像上传失败");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Response.error("人脸图像上传失败：" + e.getMessage());
+        }
+    }
+
 
     /**
      * 更新用户信息
