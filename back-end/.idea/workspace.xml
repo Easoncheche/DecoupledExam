@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="back-end:war" />
       <artifact name="back-end:war exploded" />
     </artifacts-to-build>
   </component>
@@ -10,84 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fbd584e-7bd6-478b-8e4e-ed914d672ffe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/annotation/LogRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/app/testChatGLM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/aspect/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/aspect/SecurityEventAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/ExamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/LogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/SecurityEventLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/StudentGradeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/TestLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/UserLoginLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/ExamDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/ExamNotificationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/ExamRecordDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/ExamSettingDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/QuestionTypeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/SecurityEventLogDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/StudentGradeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/SystemOperationLogDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/UserLoginLogDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dto/ExamGenerationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dto/ExamStudentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dto/StudentGradeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/ExamNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/ExamRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/ExamSetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/QuestionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/SecurityEventLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/StudentGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/StudentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/SystemOperationLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/UserLoginLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/ExamNotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/ExamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/ExamSettingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/SecurityEventLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/StudentGradeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/SystemOperationLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/UserLoginLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/i/SecurityEventLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/i/SystemOperationLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/i/UserLoginLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/ChatGLM_N.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/IpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/LoginLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/SecurityLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/app/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/app/TestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/aspect/AuthHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/aspect/AuthHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/ExamPaperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/ExamPaperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/SubjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/QuestionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/QuestionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/QuestionTagsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/QuestionTagsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/Questions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/ExamPaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/ExamPaperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/QuestionTagsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/QuestionTagsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../sql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +52,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -134,36 +67,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Base64Test.executor": "Run",
-    "Application.ChatGLM.executor": "Run",
-    "Application.SM4test.executor": "Run",
-    "Application.TestMain (1).executor": "Run",
-    "Application.TestMain.executor": "Run",
-    "Application.testChatGLM.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 11.0.3.executor": "Run",
-    "git-widget-placeholder": "正在合并 wxh",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/31986/Desktop/DecoupledExam/sql.sql",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.32528734",
-    "settings.editor.selected.configurable": "Console",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Base64Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ChatGLM.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SM4test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestMain (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.testChatGLM.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 11.0.3.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat 服务器.Tomcat 11.0.3.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;wxh&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/31986/Desktop/DecoupledExam/sql.sql&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.32528734&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Tomcat 服务器.Tomcat 11.0.3">
     <configuration name="Base64Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.zjut.backend.app.Base64Test" />
@@ -230,10 +164,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 11.0.3" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.3" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat 11.0.3" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.4" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="back-end:war exploded">
+        <artifact name="back-end:war">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -315,6 +249,7 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="back-end:war exploded" />
           <artifact name="DecoupledExam:war exploded" />
+          <artifact name="back-end:war" />
         </option>
       </method>
     </configuration>
@@ -330,8 +265,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -363,6 +298,8 @@
       <workItem from="1766290279226" duration="11252000" />
       <workItem from="1766307984439" duration="23000" />
       <workItem from="1766308023204" duration="318000" />
+      <workItem from="1766319285787" duration="3215000" />
+      <workItem from="1766322527232" duration="1859000" />
     </task>
     <servers />
   </component>
