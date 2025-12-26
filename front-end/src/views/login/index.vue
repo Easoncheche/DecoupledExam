@@ -190,10 +190,14 @@ const handleLogin = () => {
             router.push('/student').then(()=>{window.location.reload();})
             break
         }
+      }else{
+        ElNotification({title: 'Warning', message: res['msg'], type: 'warning',})
       }
     },
 
-    onError(err){},
+    onError(err){
+      ElNotification({title: 'Error', message: err['msg'], type: 'error',})
+    },
 
     onFinally(){
       isLoading.value = false

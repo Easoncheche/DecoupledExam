@@ -10,52 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="937f70ff-fb78-4d5c-bf8c-2c0987a3a36e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a3b8b75-ed66-4a34-8a59-a515369eb169.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1a3b8b75-ed66-4a34-8a59-a515369eb169.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/app/Base64Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/app/Base64Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/controller/QuestionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/dao/QuestionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/dao/QuestionDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/dto/QuestionQueryDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/dto/QuestionQueryDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/po/QuestionItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/po/QuestionItems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/po/Questions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/po/Questions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/service/ExamPaperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/service/ExamPaperService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/service/QuestionService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/service/QuestionService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$7$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$7$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/cn/edu/zjut/backend/util/ChatGLM$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/springmvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/back_end_Web_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/app/Base64Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/app/Base64Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/app/FaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/app/FaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/aspect/AuthHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/aspect/AuthHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/SubjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/QuestionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/QuestionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dto/QuestionQueryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dto/QuestionQueryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/FaceRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/FaceRec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/apis/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/apis/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/components/navbar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/components/navbar/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/views/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/views/question/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/views/question/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +233,8 @@
       <option name="presentableId" value="Default" />
       <updated>1766638103450</updated>
       <workItem from="1766638106124" duration="13638000" />
-      <workItem from="1766682362251" duration="9000" />
+      <workItem from="1766682362251" duration="168000" />
+      <workItem from="1766728145153" duration="11113000" />
     </task>
     <servers />
   </component>

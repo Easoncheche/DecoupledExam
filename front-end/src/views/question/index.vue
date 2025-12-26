@@ -19,8 +19,12 @@
         <div class="p-6 space-y-6 text-base w-3/4">
           <!-- 操作区域 -->
           <div class="flex flex-wrap gap-3 items-center">
-            <button class="btn btn-primary" @click="handleCreate">
+            <button class="btn btn-primary" onclick="questionCreateDialog.showModal()">
               创建题目
+            </button>
+
+            <button class="btn btn-accent" onclick="importQuestionDialog.showModal()">
+              导入题目
             </button>
 
             <button
@@ -142,11 +146,19 @@
       </main>
     </div>
   </div>
+  <QuestionCreateDialog
+    :questionTypes="questionTypes"
+    @close="close"
+  />
+  <QuestionImportDialog
+    @close="closeQuestionImport"
+    @getQuestions="getQuestions(false)"
+  />
 </template>
 
 <script setup lang="ts">
-import {ref, computed, watch, onMounted, nextTick, onBeforeMount} from 'vue'
-import { QuestionFilters } from "../../components";
+import {ref, computed, watch, onMounted, nextTick} from 'vue'
+import { QuestionFilters, QuestionCreateDialog, QuestionImportDialog } from "../../components";
 import { useRequest } from "vue-hooks-plus";
 import { getQuestionsAPI, getQuestionTypeAPI, getSubjectAPI } from '../../apis'
 
@@ -184,6 +196,8 @@ onMounted(()=>{
       }
     }
   })
+
+  console.log(questionTypes)
 
   useRequest(()=>getSubjectAPI(), {
     onSuccess(res) {
@@ -410,17 +424,18 @@ const formatDate = (isoString: string): string => {
   })
 }
 
-// 操作处理
-const handleCreate = () => {
-  console.log('跳转到创建题目页面')
-  // 例如：router.push('/questions/create')
-}
-
 const handleBatchDelete = () => {
   if (selectedIds.value.length === 0) return
   console.log('批量删除题目 IDs:', selectedIds.value)
   // 调用 API 删除
   // 删除成功后可刷新列表，并退出批量模式
   // exitBatchMode()
+}
+
+const close = () => {
+  questionCreateDialog.close()
+}
+const closeQuestionImport = () => {
+  importQuestionDialog.close()
 }
 </script>
