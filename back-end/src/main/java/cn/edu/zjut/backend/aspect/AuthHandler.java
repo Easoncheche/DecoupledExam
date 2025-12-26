@@ -1,6 +1,7 @@
 package cn.edu.zjut.backend.aspect;
 
 import cn.edu.zjut.backend.util.Jwt;
+import cn.edu.zjut.backend.util.UserContext;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -25,7 +26,8 @@ public class AuthHandler {
      */
     private static final List<String> WHITE_LIST = List.of(
             "/api/user/register",
-            "/api/user/login"
+            "/api/user/login",
+            "/api/user/login-face"
     );
 
     @Pointcut("execution(* cn.edu.zjut.backend.controller..*(..))")
@@ -67,11 +69,14 @@ public class AuthHandler {
                 throw new Exception("Token invalid");
             }
 
+            UserContext.setClaims(claims);
+            // 同时将claims设置到request属性中，以供Controller使用
             request.setAttribute("claims", claims);
 
             // ✅ 放行，执行 Controller
             return joinPoint.proceed();
         } catch (Exception e) {
+            e.printStackTrace();
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             response.getWriter().write("{\"code\":401,\"message\":\"Invalid token\"}");
             return null;
