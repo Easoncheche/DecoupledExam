@@ -78,6 +78,7 @@ export const uploadAvatarAPI = async (file: File, token: string) => {
     method: "POST",
     headers: {
       "Authorization": `Bearer ${token}`
+      // 不设置Content-Type，让浏览器自动设置
     },
     data: formData
   })
@@ -92,6 +93,7 @@ export const uploadFaceImageAPI = async (file: File, token: string) => {
     method: "POST",
     headers: {
       "Authorization": `Bearer ${token}`
+      // 不设置Content-Type，让浏览器自动设置
     },
     data: formData
   })

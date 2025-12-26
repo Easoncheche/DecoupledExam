@@ -1,6 +1,14 @@
 <template>
   <div class="max-w-4xl mx-auto p-6">
-    <h1 class="text-3xl font-bold mb-8 text-center">个人信息管理</h1>
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-3xl font-bold">个人信息管理</h1>
+      <button @click="goToUserDashboard" class="btn btn-outline">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        返回主页面
+      </button>
+    </div>
     
     <div class="bg-base-100 p-8 rounded-xl shadow-lg mb-8">
       <div class="flex flex-col items-center mb-8">
@@ -13,15 +21,14 @@
               class="w-full h-full object-cover"
             />
             <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
-              <label class="btn btn-circle btn-primary flex items-center justify-center">
+              <label class="btn btn-circle btn-primary flex items-center justify-center cursor-pointer">
                 <input 
                   type="file" 
                   class="hidden" 
                   accept="image/*"
                   @change="handleAvatarUpload"
-                  :disabled="!isEditing"
                 />
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -308,6 +315,7 @@ import {
   uploadFaceImageAPI
 } from '../../apis/Server/userAPI';
 import { jwtDecode } from 'jwt-decode';
+import router from '../../routers';
 
 interface UserProfile {
   id: number;
@@ -358,6 +366,23 @@ const getUserTypeText = (userType: number): string => {
     case 1: return '教师';
     case 2: return '学生';
     default: return '未知';
+  }
+};
+
+// 根据用户类型导航到对应的主页面
+const goToUserDashboard = () => {
+  switch(userProfile.value.userType) {
+    case 0: // 管理员
+      router.push('/admin');
+      break;
+    case 1: // 教师
+      router.push('/teacher/question'); // 或者其他教师主页面
+      break;
+    case 2: // 学生
+      router.push('/'); // 或者其他学生主页面
+      break;
+    default:
+      router.push('/'); // 默认返回首页
   }
 };
 
