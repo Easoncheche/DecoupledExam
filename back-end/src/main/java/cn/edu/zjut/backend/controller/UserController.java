@@ -125,6 +125,7 @@ public class UserController {
      */
     @RequestMapping(value = "/user/login-face", method = RequestMethod.POST)
     @ResponseBody
+    @LogRecord(module = "用户认证", action = "人脸登录", targetType = "用户", logType = LogRecord.LogType.LOGIN)
     public Response<String> loginFace(@RequestBody Map<String, Object> loginRequest) {
         FaceRec faceRec = new FaceRec();
         String videoBase64 = loginRequest.get("video").toString();

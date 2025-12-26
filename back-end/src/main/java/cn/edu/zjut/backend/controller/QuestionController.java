@@ -97,7 +97,7 @@ public class QuestionController {
         multiData.put("total", total);
 
         return Response.success(multiData);
->>>>>>> upstream/main
+
     }
 
     @RequestMapping(value = "/api/question", method = RequestMethod.DELETE)
