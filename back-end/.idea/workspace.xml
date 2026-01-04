@@ -11,27 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4fbd584e-7bd6-478b-8e4e-ed914d672ffe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/781162ad-39bb-4c90-b309-bc01f38361ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/781162ad-39bb-4c90-b309-bc01f38361ff.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/CourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/dao/CourseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/StudentCourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/StudentCourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/TeacherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/apis/Server/userAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/apis/Server/userAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/components/navbar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/components/navbar/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/routers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/routers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/views/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/views/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/views/profile/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/views/profile/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/vite.config.js" afterDir="false" />
-    </list>
-    <list default="true" id="937f70ff-fb78-4d5c-bf8c-2c0987a3a36e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a3b8b75-ed66-4a34-8a59-a515369eb169.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1a3b8b75-ed66-4a34-8a59-a515369eb169.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,6 +265,9 @@
       <workItem from="1766638106124" duration="13638000" />
       <workItem from="1766682362251" duration="168000" />
       <workItem from="1766728145153" duration="11113000" />
+      <workItem from="1767071725227" duration="711000" />
+      <workItem from="1767163458668" duration="865000" />
+      <workItem from="1767506967898" duration="624000" />
     </task>
     <servers />
   </component>
