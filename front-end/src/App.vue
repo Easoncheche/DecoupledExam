@@ -5,7 +5,7 @@
       <router-view />
     </div>
     <div class="w-screen flex flex-col items-center bg-base-200">
-<!--      <Footer></Footer>-->
+      <!--      <Footer></Footer>-->
     </div>
   </div>
 </template>
@@ -14,8 +14,9 @@
 import { ref } from "vue";
 import { Navbar, Footer } from './components';
 import { useMainStore } from "./stores";
+import useLoginStore from "./stores/service/loginStore";
 
-const isLogin = ref<boolean>(useMainStore().useLoginStore().loginSession)
+const isLogin = ref<boolean>(useLoginStore().loginSession)
 </script>
 
 <style scoped>

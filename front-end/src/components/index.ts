@@ -12,20 +12,21 @@ import SmartComposeDialog from "./examPaper/SmartComposeDialog.vue";
 import EditExamPaperDialog from "./examPaper/EditExamPaperDialog.vue"
 import AddQuestionToPaperDialog from "./examPaper/AddQuestionToPaperDialog.vue";
 import PaperPreview from "./examPaper/PaperPreview.vue";
-
+import StudentGradeFilters from "./studentGrade/StudentGradeFilters.vue";
 export {
-    Navbar,
-    Footer,
-    QuestionFilters,
-    CameraRecorder,
-    QuestionCreateDialog,
-    QuestionImportDialog,
-    QuestionPreviewDialog,
-    QuestionTagDialog,
-    ExamPaperFilter,
-    ManualComposeDialog,
-    SmartComposeDialog,
-    EditExamPaperDialog,
-    AddQuestionToPaperDialog,
-    PaperPreview,
+  Navbar,
+  Footer,
+  QuestionFilters,
+  CameraRecorder,
+  QuestionCreateDialog,
+  QuestionImportDialog,
+  QuestionPreviewDialog,
+  QuestionTagDialog,
+  ExamPaperFilter,
+  ManualComposeDialog,
+  SmartComposeDialog,
+  EditExamPaperDialog,
+  AddQuestionToPaperDialog,
+  PaperPreview,
+  StudentGradeFilters,
 }
