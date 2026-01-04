@@ -3,6 +3,8 @@ import getQuestionTypeAPI from "./Server/questions/getQuestionTypeAPI";
 import getSubjectAPI from "./Server/getSubjectAPI";
 import getQuestionsAPI from "./Server/questions/getQuestionsAPI";
 import loginFaceAPI from "./Server/loginFaceAPI";
+import verifyFaceAPI from "./Server/exam/verifyFaceAPI";
+
 import {
     createExamAPI,
     getExamListAPI,
@@ -29,8 +31,6 @@ import {
     searchStudentsAPI,
     getStudentsNotInExamAPI
 } from "./Server/studentAPI";
-import addQuestionsAPI from "./Server/addQuestionsAPI";
-import importQuestionsAPI from "./Server/importQuestionsAPI";
 import addQuestionsAPI from "./Server/questions/addQuestionsAPI";
 import importQuestionsAPI from "./Server/questions/importQuestionsAPI";
 import registerAPI  from "./Server/registerAPI";
@@ -58,6 +58,10 @@ import addExamPaperQuestionsAPI from "./Server/examPaper/addExamPaperQuestionsAP
 import getImportProgressAPI from "./Server/questions/getImportProgressAPI";
 import getPaperGenerateProgressAPI from "./Server/examPaper/getPaperGenerateProgressAPI";
 import modifySealedStatusAPI from "./Server/examPaper/modifySealedStatusAPI";
+import getExam_PapersAPI from "./Server/examPaper/getExam_PaperAPI";
+import addExamAnswerAPI from "./Server/examAnswer/addExamAnswerAPI";
+import getExamSettingsAPI from "./Server/examSettings/getExamSettingsAPI";
+import handleViolationAPI from "./Server/exam/handleViolationAPI";
 
 export {
     loginAPI,
@@ -113,5 +117,10 @@ export {
     addExamPaperQuestionsAPI,
     getImportProgressAPI,
     getPaperGenerateProgressAPI,
-    modifySealedStatusAPI
+    modifySealedStatusAPI,
+    verifyFaceAPI,
+    getExam_PapersAPI,
+    addExamAnswerAPI,
+    getExamSettingsAPI,
+    handleViolationAPI,
 }

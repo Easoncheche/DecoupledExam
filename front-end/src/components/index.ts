@@ -12,6 +12,7 @@ import SmartComposeDialog from "./examPaper/SmartComposeDialog.vue";
 import EditExamPaperDialog from "./examPaper/EditExamPaperDialog.vue"
 import AddQuestionToPaperDialog from "./examPaper/AddQuestionToPaperDialog.vue";
 import PaperPreview from "./examPaper/PaperPreview.vue";
+import ExamPreparation from "./examPage/ExamPreparation.vue";
 
 export {
     Navbar,
@@ -28,4 +29,5 @@ export {
     EditExamPaperDialog,
     AddQuestionToPaperDialog,
     PaperPreview,
+    ExamPreparation,
 }

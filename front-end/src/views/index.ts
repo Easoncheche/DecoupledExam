@@ -6,16 +6,15 @@ import CreateExam from "./exam/CreateExam.vue";
 import ExamResult from "./exam/ExamResult.vue";
 import ExamStudents from "./exam/ExamStudents.vue";
 import ExamNotifications from "./student/ExamNotifications.vue";
-
 import Register from "./register/index.vue";
 import TeacherRegister from "./admin/teacherRegister/index.vue";
 import ProfileManagement from "./profile/index.vue";
-import Question from "./question/index.vue";
 import Subject from "./subject/index.vue";
 import Admin from "./admin/index.vue"
 import ExamPaper from "./examPaper/index.vue"
 import StudentDashboard from "./student/dashboard/index.vue"
 import StudentCourses from './student/courses/index.vue'
+import ExamPage from "./examPage/index.vue"
 
 export {
     Login,
@@ -34,6 +33,7 @@ export {
     ExamPaper,
     StudentDashboard,
     StudentCourses,
+    ExamPage,
 }
 
 
