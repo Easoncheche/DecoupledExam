@@ -62,6 +62,11 @@ import getExam_PapersAPI from "./Server/examPaper/getExam_PaperAPI";
 import addExamAnswerAPI from "./Server/examAnswer/addExamAnswerAPI";
 import getExamSettingsAPI from "./Server/examSettings/getExamSettingsAPI";
 import handleViolationAPI from "./Server/exam/handleViolationAPI";
+import {
+    getSystemOperationLogsAPI,
+    getSecurityEventLogsAPI,
+    getUserLoginLogsAPI
+} from "./Server/getLogsAPI";
 
 export {
     loginAPI,
@@ -123,4 +128,7 @@ export {
     addExamAnswerAPI,
     getExamSettingsAPI,
     handleViolationAPI,
+    getSystemOperationLogsAPI,
+    getSecurityEventLogsAPI,
+    getUserLoginLogsAPI
 }

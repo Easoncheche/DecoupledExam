@@ -15,6 +15,7 @@ import ExamPaper from "./examPaper/index.vue"
 import StudentDashboard from "./student/dashboard/index.vue"
 import StudentCourses from './student/courses/index.vue'
 import ExamPage from "./examPage/index.vue"
+import LogManagement from "./admin/log/index.vue"
 
 export {
     Login,
@@ -34,6 +35,7 @@ export {
     StudentDashboard,
     StudentCourses,
     ExamPage,
+    LogManagement,
 }
 
 
