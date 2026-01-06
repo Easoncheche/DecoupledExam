@@ -38,17 +38,17 @@
             删除/修改课程
           </router-link>
           <router-link class="p-3 rounded-lg bg-base-200 flex items-center justify-center" to="/exam">
-            我的考试
+            考试管理
           </router-link>
-          <a class="p-3 rounded-lg bg-base-200 flex items-center justify-center" href="#">
+          <router-link class="p-3 rounded-lg bg-base-200 flex items-center justify-center" to="/teacher/question">
             题库管理
-          </a>
+          </router-link>
         </div>
       </div>
     </div>
 
     <!-- 功能卡片 -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <router-link to="/teacher/courses" class="bg-base-100 p-6 rounded-lg shadow">
           <h4 class="text-lg font-medium mb-3">课程管理</h4>
           <p class="text-sm text-gray-500">创建/删除/修改课程</p>
@@ -65,33 +65,41 @@
           </div>
         </router-link>
 
-      <div class="bg-base-100 p-6 rounded-lg shadow">
-        <h4 class="text-lg font-medium mb-3">通知管理</h4>
-        <p class="text-sm text-gray-500">发布/接受通知</p>
-        <div class="mt-4">
-          <button class="btn btn-accent">发布通知</button>
+        <div class="bg-base-100 p-6 rounded-lg shadow">
+          <h4 class="text-lg font-medium mb-3">通知管理</h4>
+          <p class="text-sm text-gray-500">发布/接受通知</p>
+          <div class="mt-4">
+            <button class="btn btn-accent">发布通知</button>
+          </div>
         </div>
-      </div>
+
+        <router-link to="/teacher/subject-binding" class="bg-base-100 p-6 rounded-lg shadow">
+          <h4 class="text-lg font-medium mb-3">学科绑定</h4>
+          <p class="text-sm text-gray-500">绑定/管理教学学科</p>
+          <div class="mt-4">
+            <button class="btn btn-primary">绑定学科</button>
+          </div>
+        </router-link>
+
     </div>
 
     <!-- 题库与试卷 -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-base-100 p-6 rounded-lg shadow">
+      <router-link to="/teacher/question" class="bg-base-100 p-6 rounded-lg shadow">
         <h4 class="text-lg font-medium mb-3">题库管理</h4>
         <p class="text-sm text-gray-500">创建/删除/修改题目</p>
-        <div class="mt-4 flex gap-2">
+        <div class="mt-4">
           <button class="btn">创建题目</button>
-          <button class="btn btn-outline">管理题目</button>
         </div>
-      </div>
+      </router-link>
 
-      <div class="bg-base-100 p-6 rounded-lg shadow">
+      <router-link to="/teacher/exam-paper" class="bg-base-100 p-6 rounded-lg shadow">
         <h4 class="text-lg font-medium mb-3">试卷管理</h4>
         <p class="text-sm text-gray-500">组卷 / 发布试卷</p>
         <div class="mt-4">
           <button class="btn">创建试卷</button>
         </div>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
