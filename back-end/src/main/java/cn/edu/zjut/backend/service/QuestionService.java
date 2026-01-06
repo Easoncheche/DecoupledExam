@@ -632,7 +632,7 @@ public class QuestionService {
                 String qContent = q.substring(firstSpaceIndex + 1);   // 题目内容
                 String qSubject = qMark.split("-")[0];     // 题目学科
                 String qType = qMark.split("-")[1];         // 题目类型
-                qType = qType.equals("完形填空") || qType.equals("阅读理解") ? qType : qType + "题";
+                qType = qType.equals("完形填空") || qType.equals("阅读理解") || qType.equals("名词解析") ? qType : qType + "题";
                 System.out.println(qSubject +" " + qType);
 
 //                Thread.sleep(10000);

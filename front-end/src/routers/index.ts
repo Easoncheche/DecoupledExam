@@ -4,6 +4,8 @@ import { useMainStore } from "../stores";
 import { storeToRefs } from "pinia";
 
 import { Admin, Login, Register, TeacherRegister, ProfileManagement, Question, Subject, ExamPaper, StudentDashboard, ExamPage, LogManagement, StudentGrade, StudentGrades } from "../views";
+import AdminSimulateLogin from "../views/admin/simulateLogin.vue";
+import AdminUserManagement from "../views/admin/userManagement.vue";
 
 import ExamList from "../views/exam/ExamList.vue";
 import ExamDetail from "../views/exam/ExamDetail.vue";
@@ -70,6 +72,39 @@ const routes: Array<RouteRecordRaw> = [
         path: "profile",
         name: "profileManagement",
         component: ProfileManagement,
+      },
+      {
+        path: "simulate-login",
+        name: "adminSimulateLogin",
+        component: AdminSimulateLogin,
+      },
+      {
+        path: "user-management",
+        name: "adminUserManagement",
+        component: () => import('../views/admin/userManagement/index.vue'),
+        children: [
+          {
+            path: "",
+            name: "adminUserManagementList",
+            component: AdminUserManagement,
+          }
+        ]
+      }
+      ,
+      {
+        path: "user-management/all",
+        name: "adminUsersList",
+        component: () => import('../views/admin/usersList.vue'),
+      },
+      {
+        path: "student-management",
+        name: "adminStudentsList",
+        component: () => import('../views/admin/studentsList.vue'),
+      },
+      {
+        path: "teacher-management",
+        name: "adminTeachersList",
+        component: () => import('../views/admin/teachersList.vue'),
       }
     ]
   },
@@ -107,6 +142,11 @@ const routes: Array<RouteRecordRaw> = [
         path: "courses",
         name: "teacherCourses",
         component: () => import('../views/teacher/courses/index.vue'),
+      },
+      {
+        path: "subject-binding",
+        name: "teacherSubjectBinding",
+        component: () => import('../views/teacher/dashboard/TeacherSubjectBinding.vue'),
       }
     ]
   },
@@ -179,7 +219,7 @@ router.beforeEach((to, _, next) => {
 
     if (loginSession.value === false) {
         //解决无限重定向的问题
-        if (to.path === "/login") {
+        if (to.path === "/login" || to.path === "/register") {
             next();
         } else {
             next("/login");

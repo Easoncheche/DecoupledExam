@@ -9,45 +9,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2dd0e68-601c-4e0d-a89b-8bc07afdf235" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" />
+    <list default="true" id="69795ad7-e08c-4d45-a25e-f51015a25c09" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-end/src/apis/Server/teacherSubjectAPI.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-end/src/views/admin/simulateLogin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-end/src/views/admin/studentsList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-end/src/views/admin/teachersList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-end/src/views/admin/userManagement.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-end/src/views/admin/userManagement/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-end/src/views/admin/usersList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-end/src/views/teacher/dashboard/TeacherSubjectBinding.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/880c897a-e2bc-4745-beed-6eda138df46a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/880c897a-e2bc-4745-beed-6eda138df46a/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/880c897a-e2bc-4745-beed-6eda138df46a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/880c897a-e2bc-4745-beed-6eda138df46a/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/880c897a-e2bc-4745-beed-6eda138df46a/storage_v2/_src_/schema/xuexitong.7YKWqw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eaed4e11-71d4-46aa-b91f-c532709200b5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f093a165-f1a6-4354-86af-313147c39ba6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f093a165-f1a6-4354-86af-313147c39ba6/storage_v2/_src_/schema/DecoupledExam.olMUHQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fb50617-0674-4e92-99ed-afd4d7d64828.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6cfcfa7a-baa1-49e3-a08a-7467cfa9325e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6cfcfa7a-baa1-49e3-a08a-7467cfa9325e/storage_v2/_src_/schema/DecoupledExam.olMUHQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/app/SM4test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/app/SM4test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/ExamPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/po/ExamPaper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/aspect/ExamAuthHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/aspect/ExamAuthHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/ExamAnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/ExamAnswerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/FaceRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/zjut/backend/util/FaceRec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/apis/Server/userAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/apis/Server/userAPI.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-end/src/components/navbar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/components/navbar/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-end/src/views/exam/CreateExam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/views/exam/CreateExam.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sql.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/avatars/avatar_1_1766740021512.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/avatars/avatar_1_1766751792892.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/avatars/avatar_1_1766755039727.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/avatars/avatar_1_1766755482165.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/avatars/avatar_1_1766756374054.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/avatars/avatar_1_1766756385979.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/avatars/avatar_2_1766757017820.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/avatars/avatar_3_1766838187571.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/avatars/avatar_4_1766823930039.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/face_images/face_1_1766747639101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/face_images/face_1_1766761990778.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/face_images/face_4_1766831660590.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/face_images/face_5_1766488599168.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/routers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/routers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/views/admin/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/views/admin/dashboard/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/views/admin/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/views/admin/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/src/views/teacher/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/src/views/teacher/dashboard/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -72,21 +73,22 @@
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
-  "associatedIndex": 0
+  "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="37s6ZyGi6y48IgVJQ2A2UzvtRrs" />
+  <component name="ProjectId" id="37sHx9Ogsi8PvJs1UZgbCwqTQwA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.SM4test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 11.0.3.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/31986/Desktop/DecoupledExam/DecoupledExam.sql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,27 +103,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 11.0.3">
-    <configuration name="SM4test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.edu.zjut.backend.app.SM4test" />
-      <module name="back-end" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.zjut.backend.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <shortenClasspath name="ARGS_FILE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Tomcat 11.0.3" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.3" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -132,7 +114,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="ee49a099-537f-4e8a-af16-9d4f2af89896" />
+        <option name="BASE_DIRECTORY_NAME" value="e0d25669-e1aa-4e43-afaf-65a0e3d78d3a" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -140,7 +122,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54821" />
+        <option name="DEBUG_PORT" value="54092" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -209,15 +191,6 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.SM4test" />
-      <item itemvalue="Tomcat Server.Tomcat 11.0.3" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.SM4test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -230,12 +203,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c2dd0e68-601c-4e0d-a89b-8bc07afdf235" name="Changes" comment="" />
-      <created>1767679491507</created>
+      <changelist id="69795ad7-e08c-4d45-a25e-f51015a25c09" name="Changes" comment="" />
+      <created>1767685104158</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1767679491507</updated>
-      <workItem from="1767679493724" duration="4126000" />
+      <updated>1767685104158</updated>
+      <workItem from="1767685106737" duration="12362000" />
     </task>
     <servers />
   </component>

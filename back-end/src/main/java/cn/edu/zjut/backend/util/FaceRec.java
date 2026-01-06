@@ -63,6 +63,7 @@ public class FaceRec {
         livenessConfig.setDetectModel(faceDetModel);
         livenessConfig.setModelPath(resourcePath + "\\FaceModel\\MiniVision\\2.7_80x80_MiniFASNetV2.onnx");
         livenessConfig.putCustomParam("seModelPath", resourcePath + "\\FaceModel\\MiniVision\\4_0_0_80x80_MiniFASNetV1SE.onnx");
+        livenessConfig.setRealityThreshold(0.45F);
         livenessConfig.setFrameCount(3);
         livenessDetModel = LivenessModelFactory.getInstance().getModel(livenessConfig);
 
