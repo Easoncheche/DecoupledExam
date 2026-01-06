@@ -34,8 +34,14 @@ onMounted(() => {
   const { useLoginStore } = store;
   const { loginSession } = storeToRefs(useLoginStore());
 
+  // 如果 store 中标记为未登录，但 localStorage 中存在 token，认为用户已登录（恢复会话）
   if (!loginSession.value) {
-    router.push('/login');
+    const token = localStorage.getItem('token');
+    if (token) {
+      useLoginStore().setLogin(true);
+    } else {
+      router.push('/login');
+    }
   }
 });
 </script>

@@ -67,6 +67,8 @@ import {
     getSecurityEventLogsAPI,
     getUserLoginLogsAPI
 } from "./Server/getLogsAPI";
+import judgeEligibleAPI from "./Server/exam/judgeEligibleAPI";
+import uploadInvigilationVideoAPI from "./Server/exam/uploadInvigilationVideoAPI";
 
 import {
     getStudentGradeAPI,
@@ -144,6 +146,8 @@ export {
     getSystemOperationLogsAPI,
     getSecurityEventLogsAPI,
     getUserLoginLogsAPI,
+    judgeEligibleAPI,
+    uploadInvigilationVideoAPI,
 
     // ===== 本地独有的成绩相关API 补充进来 =====
     getStudentGradeAPI,

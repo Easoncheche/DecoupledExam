@@ -13,6 +13,7 @@ import EditExamPaperDialog from "./examPaper/EditExamPaperDialog.vue"
 import AddQuestionToPaperDialog from "./examPaper/AddQuestionToPaperDialog.vue";
 import PaperPreview from "./examPaper/PaperPreview.vue";
 import ExamPreparation from "./examPage/ExamPreparation.vue";
+import ExamCameraMonitor from "./examPage/ExamCameraMonitor.vue";
 import StudentGradeFilters from "./studentGrade/StudentGradeFilters.vue";
 
 export {
@@ -31,5 +32,6 @@ export {
     AddQuestionToPaperDialog,
     PaperPreview,
     ExamPreparation,
+    ExamCameraMonitor,
     StudentGradeFilters,
 }
